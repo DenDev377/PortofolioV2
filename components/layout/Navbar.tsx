@@ -95,13 +95,13 @@ export default function Navbar() {
                     <span className="sr-only">Toggle Menu</span>
                   </Button>
                 </SheetTrigger>
-                <SheetContent side="right" className="w-[80vw] sm:w-[350px]">
+                <SheetContent side="right" className="!w-64 sm:!w-80">
                   <SheetHeader>
                     <SheetTitle className="text-left font-bold tracking-tighter text-xl mb-6 mt-4">
                       Prtf<span className="text-primary">.</span>
                     </SheetTitle>
                   </SheetHeader>
-                  <div className="flex flex-col space-y-6 mt-2">
+                  <div className="flex flex-col space-y-6 mt-2 px-2">
                     {navLinks.map((link) => (
                       <Link
                         key={link.href}
