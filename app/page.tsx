@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Code } from "lucide-react";
 import About from "@/components/sections/About";
+import Projects from "@/components/sections/Projects";
 
 export default function Home() {
   return (
@@ -60,6 +61,9 @@ export default function Home() {
 
       {/* About Section */}
       <About />
+      
+      {/* Projects Section */}
+      <Projects />
     </>
   );
 }
