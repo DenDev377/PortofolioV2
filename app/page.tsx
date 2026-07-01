@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Code } from "lucide-react";
 import About from "@/components/sections/About";
 import Projects from "@/components/sections/Projects";
+import Contact from "@/components/sections/Contact";
 
 export default function Home() {
   return (
@@ -64,6 +65,9 @@ export default function Home() {
       
       {/* Projects Section */}
       <Projects />
+
+      {/* Contact Section */}
+      <Contact />
     </>
   );
 }

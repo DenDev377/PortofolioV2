@@ -31,17 +31,16 @@ export default function Navbar() {
   const navLinks = [
     { href: "#about", label: "About" },
     { href: "#projects", label: "Projects" },
-    { href: "#experience", label: "Experience" },
+    //{ href: "#experience", label: "Experience" },
     { href: "#contact", label: "Contact" },
   ];
 
   return (
     <nav
-      className={`fixed top-0 w-full z-50 transition-all duration-300 border-b ${
-        isScrolled
+      className={`fixed top-0 w-full z-50 transition-all duration-300 border-b ${isScrolled
           ? "bg-background/60 backdrop-blur-lg border-border shadow-sm"
           : "bg-background/40 backdrop-blur-md border-border/20"
-      }`}
+        }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">

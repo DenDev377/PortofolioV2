@@ -2,11 +2,12 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
 import { ThemeProvider } from "@/components/theme-provider";
 
 export const metadata: Metadata = {
-  title: "Portfolio",
-  description: "Next.js Portfolio",
+  title: "Dendi | Software Developer",
+  description: "Portofolio Dendi - Software Developer yang berfokus pada UI modern dan sistem backend yang tangguh.",
 };
 
 const geistSans = Geist({
@@ -35,6 +36,7 @@ export default function RootLayout({
         >
           <Navbar />
           {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
